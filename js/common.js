@@ -1,6 +1,11 @@
 $(document).ready(function () {
   new WOW().init();
   
+  var image = document.getElementsByClassName('processing-bg_crypt');
+  new simpleParallax(image);
+
+
+  
   $(".phone").mask("+7 (999) 999-9999");
 
   	
