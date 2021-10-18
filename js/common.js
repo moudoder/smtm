@@ -1,7 +1,9 @@
 $(document).ready(function () {
   new WOW().init();
   
-  
+  $('.header-list__item a').on('click', function() {
+    return false;
+  })
 
 
   
