@@ -14,6 +14,11 @@ $(document).ready(function () {
     return false;
   })
   
+
+  $('.sport-menu_btn').on('click', function() {
+    $('#section-slider').slick('slickGoTo',4);
+  })
+
   $(".phone").mask("+7 (999) 999-9999");
 
   	
