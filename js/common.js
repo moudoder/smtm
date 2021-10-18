@@ -1,8 +1,7 @@
 $(document).ready(function () {
   new WOW().init();
   
-  var image = document.getElementsByClassName('processing-bg_crypt');
-  new simpleParallax(image);
+  
 
 
   
