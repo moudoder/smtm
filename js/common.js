@@ -1,11 +1,18 @@
 $(document).ready(function () {
   new WOW().init();
   
-  $('.header-list__item a').on('click', function() {
+  $(".scrol-to").on("click", function (event) {
+    event.preventDefault();
+    let id  = $(this).attr('href'),
+    top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+
+  $('.about_btn_more').on('click', function() {
+    $('.about__text').addClass('about-active');
+    $(this).addClass('btn-active-more');
     return false;
   })
-
-
   
   $(".phone").mask("+7 (999) 999-9999");
 
