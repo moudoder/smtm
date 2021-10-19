@@ -47,6 +47,7 @@ $(document).ready(function () {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
+    dots: true,
     responsive: [
         {
           breakpoint: 500,
