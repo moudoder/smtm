@@ -3,6 +3,7 @@ $(document).ready(function () {
   
   $(".scrol-to").on("click", function (event) {
     event.preventDefault();
+    $('.modal-menu').removeClass('modal-menu-active');
     let id  = $(this).attr('href'),
     top = $(id).offset().top;
     $('body,html').animate({scrollTop: top}, 1500);
@@ -16,6 +17,7 @@ $(document).ready(function () {
   
 
   $('.sport-menu_btn').on('click', function() {
+    $('.modal-menu').removeClass('modal-menu-active');
     $('#section-slider').slick('slickGoTo',4);
   })
 
@@ -79,4 +81,14 @@ $(document).ready(function () {
     $('#section-slider').slick('slickGoTo',4);
     return false;
   })
+
+  $('.header-menu').on('click', function() {
+    $('.modal-menu').addClass('modal-menu-active');
+    return false;
+  })
+  $('.modal-menu__close').on('click', function() {
+    $('.modal-menu').removeClass('modal-menu-active');
+    return false;
+  })
+
 })
