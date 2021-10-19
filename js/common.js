@@ -45,6 +45,8 @@ $(document).ready(function () {
     slidesToScroll: 1,
     swipe: true,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
     responsive: [
         {
           breakpoint: 500,
