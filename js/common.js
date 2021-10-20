@@ -59,6 +59,17 @@ $(document).ready(function () {
         },
     ]
    });
+  $('.sport-slider').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    swipe: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    fade: true,
+    cssEase: 'linear'
+   });
 
   $('#range').rangeslider({
       polyfill : false,
